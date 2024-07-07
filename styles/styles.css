@@ -1,0 +1,301 @@
+/* Ajustes del scrollbar principal */
+html ::-webkit-scrollbar{
+    background-color: rgba(255, 0, 0, 0.384);
+    width: 15px
+}
+html ::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: rgb(26, 26, 26);
+}
+html ::-webkit-scrollbar-thumb:hover{
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* Ajustes del footer y su contenido */
+header {
+    height: 10vh;
+    background-color: rgb(26, 26, 26);
+}
+header div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4vw;  
+}
+.titulo-principal {
+    color: aliceblue;
+}
+.logo-alura {
+    margin-top: 2vh;
+    height: 5vh
+}
+.logo-marvel{
+    margin-top: 1.2vh;
+    height: 8vh
+}
+h1 {
+
+    font-size: x-large;
+    margin: 15px;
+    text-align: center;
+}  
+p {
+    padding: 5px;
+    font-size: medium;
+}
+
+/* Ajustes para el contenedor de cards */
+main {
+    font-family: "Barriecito", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(70, 152, 224);
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    min-height: calc(100vh - 100px);
+}
+.contenedor {
+    height: 50vh;
+    width: 50vw;
+    background-color: rgb(243, 243, 243);
+    margin-top: 13vh;
+    margin-left: 30px;
+    box-shadow: 5px 7px 10px rgb(0, 0, 0, 0.5);
+    overflow-y: scroll;
+    border-radius: 3px;
+    background-image: url(../assets/pokemon-logo-pokemon-icon-transparent-free-png.webp);
+    background-size: auto 100%;
+    
+}
+.contenedor h1 {
+    width: 25%;
+    margin: 15px auto 0 auto;
+    font-weight: 850;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: 200ms;
+    text-align: center;
+}
+.contenedor h1:hover {
+    background-color: rgba(255, 255, 255);
+}
+.cards-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+}
+main ::-webkit-scrollbar{
+    background-color: rgba(255, 0, 0, 0.384);
+    width: 10px
+}
+main ::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: black;
+}
+.card {
+    max-width: 100%;
+    margin-bottom: 80%;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: -2px 2px 2px 1px #00000098;
+    transition: 300ms;
+}
+.card:hover {
+    transform: scale(1.35);
+}
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: center;
+}
+.card-valor {
+    display: flex;
+    justify-content: space-between;
+    gap: 5vw;
+    margin-bottom: 5px;
+}
+.producto {
+    width: 10vw;
+    margin: 5px;
+}
+.trash {
+    width: 1.5vw;
+    margin: 5px;
+    transition: 100ms;
+}
+.trash:hover {
+    transform: scale(1.5);
+}
+
+/* Ajustes para el mensaje de - No hay contenido */
+.mensajes {
+    width: 40%;
+    margin: 5px auto;
+    padding: 15px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+}
+.mensajes h2 {
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+}
+.mensajes p {
+    text-align: center;
+}
+.imagen-error {
+    width: 50%;
+    margin: 15px 25%;
+}
+
+/* Ajustes del formulario para agregar elementos */
+.formulario {
+    height: 50vh;
+    width: 35%;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+.formulario-campo {
+    width: 75%;
+    padding: 12%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+.formulario-campo .titulo {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    font-size: xx-large;
+}
+input {
+    font-size: large;
+    padding: 8px 10px 6px 15px;
+    margin-top: 15px;
+    border-radius: 18px;
+    background-color: rgb(243, 243, 243);
+    border-color: black;
+    box-shadow: 1px 2px 5px rgb(0, 0, 0, 0.5);
+    transition: 150ms;
+}
+input:hover {
+    border-color: rgb(5, 5, 10);
+}
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+button {
+    width: 45%;
+    margin: 15px auto;
+    font-size: 2.5vh;
+    font-weight: bolder;
+    padding: 6px 8%;
+    border-radius: 18px;
+    box-shadow: 1px 2px 5px rgb(0, 0, 0, 0.5);
+    flex-wrap: wrap;
+}
+.boton-enviar {
+    color: rgb(252, 19, 19);
+    font-weight: 800;
+    background-color: 1px 2px 5px rgb(0, 0, 0, 0.5);
+
+    transition: 300ms;
+}
+.boton-enviar:hover {
+    transform: scale(1.1);
+}
+.boton-limpiar {
+    color: rgb(90, 53, 252);
+    font-weight: 800;
+    background-color: 1px 2px 5px rgb(0, 0, 0, 0.5);
+
+    transition: 300ms;
+}
+.boton-limpiar:hover {
+    transform: scale(1.1);
+}
+
+/* Ajustes del pie de pagina */
+footer {
+    position: relative;
+    bottom: 0;
+    height: 100px;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.pie-logos {
+    display: flex;
+    gap: 20px;
+}
+footer h2 {
+color: rgb(243, 243, 243);
+}
+footer p {
+    color: rgb(243, 243, 243);
+    margin: 5px 0;
+    padding: 0;
+}
+a {
+    color: rgb(243, 243, 243);
+}
+
+/* responsividad movil hasta 768px */
+
+@media (max-width:768px) {
+    main {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        
+    }
+    .formulario {
+        width: 70%;
+        margin: 10px 10%;
+        height: auto;
+    }
+    .contenedor {
+        width: 80%;
+
+    }
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer h2, footer p {
+        text-align: center;
+    }
+    .contenedor h1 {
+        width: 40%;
+    }
+    .producto {
+        width: 20vw;
+    }
+    .boton-enviar, .boton-limpiar {
+        transform: scale(0.9);
+    }
+    .boton-enviar:hover, .boton-limpiar:hover {
+        transform: scale(1);
+    }
+}
